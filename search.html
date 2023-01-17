@@ -41,6 +41,7 @@
                       placeholder="Search for articles..."
                       value=""
                       name="s"
+
                     />
                   </div>
                 
@@ -79,6 +80,7 @@
   get: (searchParams, prop) => searchParams.get(prop),
 });
 let value = params.s;
+$("#txt-search").val(value);
 $("#searchData").text('"'+value+'"');
 
     var data = [
