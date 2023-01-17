@@ -32,71 +32,37 @@
             </div>
             <h1 class="mt-3 mb-4">Advice and answers from the Sports Travel HQ Team<br></h1>
             <div class="search-wrapper">
-                <form role="form">
-                    <div class="form-group">
-                      <input
-                        type="input"
-                        class="form-control magnify-search-icon"
-                        id="txt-search"
-                        placeholder="Search for articles..."
-                      />
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="magnify-search-icon">
-                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                        <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path>
-                    </svg>
-                  </form>
+              <form role="form" action="search.html" method="get">
+                  <div class="form-group">
+                    <input
+                      type="search"
+                      class="form-control magnify-search-icon"
+                      id="txt-search"
+                      placeholder="Search for articles..."
+                      value="aaqib"
+                      name="s"
+                    />
+                  </div>
+                
+                  <button class="searchSubmit" type="submit" onclick = "GFG_Fun()">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="#c4c4c4">
+                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path>
+                </svg></button>
+                </form>
 </div>
         </div>
     </header>
-    <div id="filter-records" class="mt-5"></div>
+   
+    
     <section id="content">
         <div class="container">
-            <div class="card-wrapper mb-3"><a href="client-faq-s-and-tutorials.html">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-2 d-flex align-items-center justify-content-md-center"><div class="icon-book"><svg role="img" viewBox="0 0 48 48"><g id="book-bookmark" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M35 31l-6-6-6 6V7h12v24z"></path><path d="M35 9h6v38H11a4 4 0 0 1-4-4V5" stroke-linejoin="round"></path><path d="M39 9V1H11a4 4 0 0 0 0 8h12" stroke-linejoin="round"></path></g></svg></div></div>
-                                <div class="col-10">
-                                    <h2 class="mt-3 mt-md-0">Client FAQ's and Tutorials</h2>
-                                    <div class="d-flex align-items-xl-center meta-info"><img class="rounded-circle img-fluid" src="assets/img/jerome-1576870276.jpg" loading="lazy" alt="Jerome Samuels">
-                                        <p class="small mb-0"><span>10 articles in this collection</span><br><span>Written by Jerome Samuels</span><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a></div>
-            <div class="card-wrapper mb-3"><a href="hotel-manager-faq-s-and-tutorials.html">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-2 d-flex align-items-center justify-content-md-center"><div class="icon-book"><svg role="img" viewBox="0 0 48 48"><g id="book-bookmark" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M35 31l-6-6-6 6V7h12v24z"></path><path d="M35 9h6v38H11a4 4 0 0 1-4-4V5" stroke-linejoin="round"></path><path d="M39 9V1H11a4 4 0 0 0 0 8h12" stroke-linejoin="round"></path></g></svg></div></div>
-                                <div class="col-10">
-                                    <h2 class="mt-3 mt-md-0">Hotel Manager FAQ's and Tutorials</h2>
-                                    <div class="d-flex align-items-xl-center meta-info"><img class="rounded-circle img-fluid" src="assets/img/jerome-1576870276.jpg" loading="lazy" alt="Jerome Samuels">
-                                        <p class="small mb-0"><span>5 articles in this collection</span><br><span>Written by Jerome Samuels</span><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a></div>
-            <div class="card-wrapper mb-3"><a href="sports-travel-hq-how-it-works.html">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-2 d-flex align-items-center justify-content-md-center"><div class="icon-book"><svg role="img" viewBox="0 0 48 48"><g id="book-bookmark" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M35 31l-6-6-6 6V7h12v24z"></path><path d="M35 9h6v38H11a4 4 0 0 1-4-4V5" stroke-linejoin="round"></path><path d="M39 9V1H11a4 4 0 0 0 0 8h12" stroke-linejoin="round"></path></g></svg></div></div>
-                                <div class="col-10">
-                                    <h2 class="mt-3 mt-md-0">Sports Travel HQ How it Works</h2>
-                                    <div class="d-flex align-items-xl-center meta-info"><img class="rounded-circle img-fluid" src="assets/img/jerome-1576870276.jpg" loading="lazy" alt="Jerome Samuels">
-                                        <p class="small mb-0"><span>2 articles in this collection</span><br><span>Written by Jerome Samuels</span><br></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a></div>
+          <h1 class="mt-5" style="--bs-secondary: #003584;--bs-secondary-rgb: 0,53,132;--bs-primary: #00C9FF;--bs-primary-rgb: 0,201,255;">Search Result for <span id="searchData"></span></h1>
+          <div id="filter-records" class="mt-5"></div>
+          <div id="noData">
+
+          </div>
+         
+      
         </div>
     </section>
     <footer class="p-3 bg-white">
@@ -109,139 +75,143 @@
 
     <script>
          $(document).ready(function () {
+          const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+let value = params.s;
+$("#searchData").text('"'+value+'"');
+
     var data = [
       {
         id: "1",
-        employee_name: "Tiger Nixon",
-        employee_salary: "320800",
-        employee_age: "61",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Upload a Rooming List",
+        description: "Learn how to upload your rooming list after the agreement is signed.",
+        url: "how-to-upload-a-rooming-list.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "2",
-        employee_name: "Garrett Winters",
-        employee_salary: "434343",
-        employee_age: "63",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to View Hotel Proposals and Accept a Proposal",
+        description: "After you create a trip, you can view the hotel bids and accept the bid that best fits your needs.",
+        url: "how-to-view-hotel-proposals-and-accept-a-proposal.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "3",
-        employee_name: "Ashton Cox",
-        employee_salary: "86000",
-        employee_age: "66",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Track a Hotel Booking",
+        description: "Track each planned trip, including what hotels have sent you proposals and the final tasks to finalize your trip.",
+        url: "how-to-track-a-hotel-booking.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "4",
-        employee_name: "Cedric Kelly",
-        employee_salary: "433060",
-        employee_age: "22",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Download Contracts and Final Bills",
+        description: "Learn how to download an Agreement between the client and hotel and the Final Bill for your records.",
+        url: "how-to-download-contracts-and-final-bills.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "5",
-        employee_name: "Airi Satou",
-        employee_salary: "162700",
-        employee_age: "33",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Add/Edit/Delete a Subuser as a Client",
+        description: "Learn how to add/edit/delete a subuser as a client to better manage your tasks.",
+        url: "how-to-add-edit-delete-a-subuser-as-a-client.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "6",
-        employee_name: "Brielle Williamson",
-        employee_salary: "372000",
-        employee_age: "61",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Select Preferred Hotels & Amenities by Default",
+        description: "Learn how to set default preferences for hotels & amenities for all of your teams.",
+        url: "how-to-select-preferred-hotels-amenities-by-default.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "7",
-        employee_name: "Herrod Chandler",
-        employee_salary: "137500",
-        employee_age: "59",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Update Profile Information and Reset Your Password",
+        description: "Learn how to update your profile information (such as your name, email, and phone number) and change your password.",
+        url: "how-to-update-profile-information-and-reset-your-password.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "8",
-        employee_name: "Rhona Davidson",
-        employee_salary: "327900",
-        employee_age: "55",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Book a Hotel",
+        description: "Learn how to create a trip and what your options are.",
+        url: "how-to-book-a-hotel.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "9",
-        employee_name: "Colleen Hurst",
-        employee_salary: "205500",
-        employee_age: "39",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Reset Your Password",
+        description: "Reset your password.",
+        url: "how-to-reset-your-password.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
       {
         id: "10",
-        employee_name: "Aaqib khan",
-        employee_salary: "103600",
-        employee_age: "23",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+        title: "How to Get Started",
+        description: "Get started by creating your account.",
+        url: "how-to-get-started.html",
+        profile_image: "assets/img/jerome-1576870276.jpg",
+        article_count: "5",
+        writer: "Jerome Samuels"
       },
     ];
 
-    $("#txt-search").keyup(function () {
-      var searchField = $(this).val();
-	  console.log('searchField',searchField);
-	  
-      if (searchField === "") {
+ 
 
-		loadDataDefault();
-        //$("#filter-records").html("");
-       // return;
-      }
+    const searchFilter=()=>{
 
-      var regex = new RegExp(searchField, "i");
-      var output = '<div class="row">';
+      var regex = new RegExp(value, "i");
+      var output = '';
       var count = 1;
       $.each(data, function (key, val) {
+
+    
         if (
-          val.employee_salary.search(regex) != -1 ||
-          val.employee_name.search(regex) != -1
+          val.description.search(regex) != -1 ||
+          val.title.search(regex) != -1
         ) {
-          output += '<div class="col-md-6 well"><div class="row">';
+          output += '<div class="card-wrapper mb-3"><a href="'+val.url+'">';
           output +=
-            '<div class="col-md-3"><img class="img-fluid" src="' +
-            val.profile_image +
-            '" alt="' +
-            val.employee_name +
-            '" /></div>';
-          output += '<div class="col-md-7">';
-          output += "<h5>" + val.employee_name + "</h5>";
-          output += "<p>" + val.employee_salary + "</p>";
-          output += "</div></div>";
+            '<div class="card"> <div class="card-body"> <div class="row">     <div class="col-2 d-flex align-items-center justify-content-md-center"><div class="icon-book"><svg role="img" viewBox="0 0 48 48"><g id="book-bookmark" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M35 31l-6-6-6 6V7h12v24z"></path><path d="M35 9h6v38H11a4 4 0 0 1-4-4V5" stroke-linejoin="round"></path><path d="M39 9V1H11a4 4 0 0 0 0 8h12" stroke-linejoin="round"></path></g></svg></div></div>';
+          output += ' <div class="col-10">';
+          output += "<h2 class='mt-3 mt-md-0'>" + val.title + "</h2>";
+          output += "<p class='card-text'>" + val.description + "</p>";
+          output +=   '<div class="d-flex align-items-xl-center meta-info"><img class="rounded-circle img-fluid" src="'+val.profile_image+'" loading="lazy" alt="Jerome Samuels"> <p class="small mb-0"><span>'+val.article_count+' articles in this collection</span><br><span>Written by '+val.writer+'</span><br></p></div>';
+          output += "</div></div></div></div></div></a>";
           output += "</div>";
       
           count++;
         }
       });
-      output += "</div>";
-      $("#filter-records").html(output);
-    });
+      output += "";
 
-    const loadDataDefault = () => {
-      var outputDefault = '<div class="row gy-3">';
-      var cnt = 1;
-      data.forEach((val, i) => {
-        outputDefault += '<div class="col-md-6 well"><div class="row">';
-        outputDefault +=
-          '<div class="col-md-3"><img class="img-fluid" src="' +
-          val.profile_image +
-          '" alt="' +
-          val.employee_name +
-          '" /></div>';
-        outputDefault += '<div class="col-md-7">';
-        outputDefault += "<h5>" + val.employee_name + "</h5>";
-        outputDefault += "<p>" + val.employee_salary + "</p>";
-        outputDefault += "</div> </div>";
-        outputDefault += "</div>";
-      
-      });
-      $("#filter-records").html(outputDefault);
-    };
-	loadDataDefault();
+      if(output===""){
+        $("#noData").html('<div class="card-wrapper mb-3"><div class="card"><div class="card-body"><h2>Sorry! No result found</h2></div></div></div>');
+      }
+      $("#filter-records").html(output);
+    }
+
+    searchFilter();
+
+
   });
     </script>
 </body>

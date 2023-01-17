@@ -32,20 +32,22 @@
             </div>
             <h1 class="mt-3 mb-4">Advice and answers from the Sports Travel HQ Team<br></h1>
             <div class="search-wrapper">
-                <form role="form" action="/search.html">
+                <form role="form" action="search.html" method="get">
                     <div class="form-group">
                       <input
-                        type="input"
+                        type="search"
                         class="form-control magnify-search-icon"
                         id="txt-search"
                         placeholder="Search for articles..."
+                        value="aaqib"
+                        name="s"
                       />
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="magnify-search-icon">
-                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                        <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path>
-                    </svg>
-                    <!-- <input type="submit" value="submit"> -->
+                  
+                    <button class="searchSubmit" type="submit" onclick = "GFG_Fun()">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="#c4c4c4">
+                      <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                      <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path>
+                  </svg></button>
                   </form>
 </div>
         </div>
@@ -111,143 +113,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <script>
-         $(document).ready(function () {
-    var data = [
-      {
-        id: "1",
-        employee_name: "Tiger Nixon",
-        employee_salary: "320800",
-        employee_age: "61",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "2",
-        employee_name: "Garrett Winters",
-        employee_salary: "434343",
-        employee_age: "63",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "3",
-        employee_name: "Ashton Cox",
-        employee_salary: "86000",
-        employee_age: "66",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "4",
-        employee_name: "Cedric Kelly",
-        employee_salary: "433060",
-        employee_age: "22",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "5",
-        employee_name: "Airi Satou",
-        employee_salary: "162700",
-        employee_age: "33",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "6",
-        employee_name: "Brielle Williamson",
-        employee_salary: "372000",
-        employee_age: "61",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "7",
-        employee_name: "Herrod Chandler",
-        employee_salary: "137500",
-        employee_age: "59",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "8",
-        employee_name: "Rhona Davidson",
-        employee_salary: "327900",
-        employee_age: "55",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "9",
-        employee_name: "Colleen Hurst",
-        employee_salary: "205500",
-        employee_age: "39",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-      {
-        id: "10",
-        employee_name: "Aaqib khan",
-        employee_salary: "103600",
-        employee_age: "23",
-        profile_image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-      },
-    ];
-
-    $("#txt-search").keyup(function () {
-      var searchField = $(this).val();
-	  console.log('searchField',searchField);
-	  
-      if (searchField === "") {
-
-		//loadDataDefault();
-        //$("#filter-records").html("");
-       // return;
-      }
-
-      var regex = new RegExp(searchField, "i");
-      var output = '<div class="row">';
-      var count = 1;
-      $.each(data, function (key, val) {
-        if (
-          val.employee_salary.search(regex) != -1 ||
-          val.employee_name.search(regex) != -1
-        ) {
-          output += '<div class="col-md-6 well"><div class="row">';
-          output +=
-            '<div class="col-md-3"><img class="img-fluid" src="' +
-            val.profile_image +
-            '" alt="' +
-            val.employee_name +
-            '" /></div>';
-          output += '<div class="col-md-7">';
-          output += "<h5>" + val.employee_name + "</h5>";
-          output += "<p>" + val.employee_salary + "</p>";
-          output += "</div></div>";
-          output += "</div>";
-      
-          count++;
-        }
-      });
-      output += "</div>";
-      $("#filter-records").html(output);
-    });
-
-    const loadDataDefault = () => {
-      var outputDefault = '<div class="row gy-3">';
-      var cnt = 1;
-      data.forEach((val, i) => {
-        outputDefault += '<div class="col-md-6 well"><div class="row">';
-        outputDefault +=
-          '<div class="col-md-3"><img class="img-fluid" src="' +
-          val.profile_image +
-          '" alt="' +
-          val.employee_name +
-          '" /></div>';
-        outputDefault += '<div class="col-md-7">';
-        outputDefault += "<h5>" + val.employee_name + "</h5>";
-        outputDefault += "<p>" + val.employee_salary + "</p>";
-        outputDefault += "</div> </div>";
-        outputDefault += "</div>";
-      
-      });
-      $("#filter-records").html(outputDefault);
-    };
-	//loadDataDefault();
-  });
-    </script>
+   
 </body>
 
 </html>
